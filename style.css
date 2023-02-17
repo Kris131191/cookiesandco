@@ -22,7 +22,7 @@ définir la police d'écriture */
 /* Dimension et positionnement du texte et de la barre de recherche dans l'entete suppérieure blanche */
 
 .entete-blanc p {
-    margin: 0 206px 0 0;
+    margin: 0 350px 0 0;
     font-style: italic;
 }
 /* Mise en forme de la phrase dans l'entete blanche */
@@ -61,17 +61,17 @@ form input {
     align-items: center;
     width: 100%;
     height: 150px;
-    background: linear-gradient(90deg, #FFAFBD, #ffc3a0);
+    background: linear-gradient(90deg, #FFAFBD, #ffc3a0);  
 }
 
 /* Taille + couleur de la partie rose de l'entete + position des du logo et du menu */
 
 .entete-rose img {
-    height: 70%;
-    width: 30%;
-    margin: 0 0 0 70px;
+    height: 90%;
+    width: 25%;
+    margin: 0 0 0 70px;   
 } 
-/* dimension et position image de l'entete */
+/* dimension et position logo de l'entete */
 
 .entete-rose ul {
     display: flex;
@@ -84,8 +84,13 @@ form input {
 /* Styliser le menu */
 
 .entete-rose li {
-    margin: 0 0 0 30px; 
-    color:white;
+    margin: 0 0 0 100px;
+    padding: 0 0 10px 0; 
+}
+
+.entete-rose li:hover {
+    border-bottom: 2px solid #343434;
+    padding: 0 0 10px 0;
 }
 
 /* repositionnement des deux éléments activités */
@@ -93,46 +98,129 @@ form input {
 /* ===>SECTION 1<=== */
 
 .section1 img {
-    height: 450px;
+    height: 500px;
     width: 100%;
-    margin:auto;
+    margin: auto;
 }
+/* Dimension et position de l'image avec cookies */
 
 .bouton-decouvrir {
-    height: 40px;
+    height: 45px;
     width: 50%;
     background: linear-gradient(90deg, #FFAFBD, #ffc3a0);
     border: 2px solid white;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 23px;
 
 }
-
-.bouton-decouvrir:hover {
-    background-color: #CFC3DD;
-}
+/* Mise en forme du bouton découvrir */
 
 .texte-photo {
     position:absolute;
-    top:80px;
+    top:90px;
     right:63px;
+    text-align: center;
 }
+/* Positionnement du texte avec bouton sur l'image des cookies */
 
 .section1 {
     position:relative;
-    width: 100%;
-    height: 100%;
 }
+/* Mise en position relative de l'image des cookies pour mettre le texte avec bouton par dessus */
 
 .section1 h1 {
-    font-size: 35px;
+    font-size: 40px;
 }
+/* Augmentation de la police du titre H1 */
 
 .section1 p {
     font-style: italic;
     margin: 20px 0 40px 0;
 }
+/* Mise en forme du texte */
 
-.texte-photo {
+
+/* ===>SECTION 2<=== */
+
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #FFAFBD;
+    margin:50px 70px 50px 70px;
+    color: white;
     text-align: center;
+}
+
+.section2 i {
+    border:2px solid white;
+    border-radius: 50px;
+    font-size: 30px;
+    padding:20px;
+}
+
+.section2 h3 {
+    padding:15px 0 10px 0;
+}
+
+/* ===>SECTION 3<=== */
+
+.section3 {
+    margin:0 70px 0 70px;
+}
+
+.vignette img {
+    height:250px;
+}
+
+.section3 h2 {
+    font-size:60px;
+    text-align: center;
+}
+
+.bouton-saveur {
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-saveur button {
+    height:50px;
+    width: 17%;
+    margin:40px 35px 40px 0;
+    border:2px solid #CFC3DD;
+    background-color: white;
+    border-radius:10px;
+    font-size: 18px;
+    color:#CFC3DD;
+}
+
+.chocolat:hover,
+.fruits:hover,
+.sans-gluten:hover,
+.gourmand:hover
+ {
+    background: linear-gradient(90deg, #FFAFBD, #ffc3a0);
+    color:white;
+}
+
+.vignette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.petite-vignette {
+    width: 30%;
+    text-align: center;
+    padding:0 10px 10px 10px;
+}
+
+.vignette h4 {
+    font-size: 25px;
+    padding:0 0 10px 0;
+}
+
+.petite-vignette p {
+    padding:0 10px;
 }
