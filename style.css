@@ -1,0 +1,138 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* enlever tous les paddings et les marges des éléments du code 
+définir la police d'écriture */
+
+/* ===> ENTETE <=== */
+
+/* >PARTIE BLANCHE< */
+
+.entete-blanc {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* width: 100%; */
+    height: 50px;
+    margin: 10px 65px 10px 0;
+}
+
+/* Dimension et positionnement du texte et de la barre de recherche dans l'entete suppérieure blanche */
+
+.entete-blanc p {
+    margin: 0 206px 0 0;
+    font-style: italic;
+}
+/* Mise en forme de la phrase dans l'entete blanche */
+
+
+form button {
+    background-color: white;
+    border:none;
+}
+
+/* Enlever le backgroung gris et les bordure du bouton de la loupe pour la barre de recherche */
+
+
+form i {
+    color:#ee9ca7;
+}
+
+/* Mettre la loupe en rose */
+
+
+form input {
+    border: 2px solid #ee9ca7;
+    border-radius: 10px;
+    height: 25px;
+    /* width: 100%; */
+}
+
+/* Styliser la barre de rechercher */
+
+
+/* >PARTIE ROSE< */
+
+.entete-rose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(90deg, #FFAFBD, #ffc3a0);
+}
+
+/* Taille + couleur de la partie rose de l'entete + position des du logo et du menu */
+
+.entete-rose img {
+    height: 70%;
+    width: 30%;
+    margin: 0 0 0 70px;
+} 
+/* dimension et position image de l'entete */
+
+.entete-rose ul {
+    display: flex;
+    margin: 0 70px 0 0;
+    list-style-type: none;
+    font-size: 25px;
+    color: #343434;
+}
+
+/* Styliser le menu */
+
+.entete-rose li {
+    margin: 0 0 0 30px; 
+    color:white;
+}
+
+/* repositionnement des deux éléments activités */
+
+/* ===>SECTION 1<=== */
+
+.section1 img {
+    height: 450px;
+    width: 100%;
+    margin:auto;
+}
+
+.bouton-decouvrir {
+    height: 40px;
+    width: 50%;
+    background: linear-gradient(90deg, #FFAFBD, #ffc3a0);
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 20px;
+
+}
+
+.bouton-decouvrir:hover {
+    background-color: #CFC3DD;
+}
+
+.texte-photo {
+    position:absolute;
+    top:80px;
+    right:63px;
+}
+
+.section1 {
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section1 h1 {
+    font-size: 35px;
+}
+
+.section1 p {
+    font-style: italic;
+    margin: 20px 0 40px 0;
+}
+
+.texte-photo {
+    text-align: center;
+}
