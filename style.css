@@ -169,20 +169,27 @@ form input {
 .section3 {
     margin:0 70px 0 70px;
 }
+/* Laisser une marge de chaque côté de la section */
 
 .vignette img {
     height:250px;
 }
+
+/* Réduire la taille des images de cookies */
 
 .section3 h2 {
     font-size:60px;
     text-align: center;
 }
 
+/* Dimension et centrage du titre h2 */
+
 .bouton-saveur {
     display: flex;
     justify-content: center;
 }
+
+/* Centrer les boutons des saveurs et les mettre en ligne */
 
 .bouton-saveur button {
     height:50px;
@@ -195,6 +202,9 @@ form input {
     color:#CFC3DD;
 }
 
+/* Style des boutons de saveurs */
+
+
 .chocolat:hover,
 .fruits:hover,
 .sans-gluten:hover,
@@ -204,23 +214,153 @@ form input {
     color:white;
 }
 
+/* Mettre un fond dégardé au survolage des boutons des saveurs */
+
 .vignette {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+/* Position des vignettes en colonne sur deux lignes et centré */
+
 .petite-vignette {
     width: 30%;
     text-align: center;
-    padding:0 10px 10px 10px;
+    margin:0 10px 10px 10px;
 }
+
+/* Mise en page de chaque petite vignette de cookies en redéfinissant leur taille, aligner le texte et un padding pour les espacer */
 
 .vignette h4 {
     font-size: 25px;
-    padding:0 0 10px 0;
+    margin:0 0 10px 0;
 }
 
+/* Agrandir le titre + mettre une marge avec le texte */
+
 .petite-vignette p {
-    padding:0 10px;
+    padding:0 57px;
+}
+
+/* éviter que le texte dépasse trop sur les côtés */
+
+/* ===>SECTION 4<=== */
+
+.section4 {
+    height: 300px;
+    width: 100%;
+    background-color: #ee9ca7;
+    margin: 50px 0;
+}
+
+/* Taille de la section, fond de couleur rose + marge au dessus pour séparer avec la section précédente */
+
+.section4 img {
+    height: 300px;
+    margin:0 40px 0 150px;
+}
+/* Réduire la taille de la photo + marge pour la décoller du bord de la page et du texte */
+
+
+.photo-texte4 {
+    display: flex;
+}
+/* Mise en place d'un flex pour mettre les éléments en ligne */
+
+.texte-section4 {
+    color:white;
+    margin:20px 0 0 0;
+}
+
+/* Mettre tout le texte en blanc et repositionner le bloc de texte par rapport au bord rose */
+
+
+.texte-section4 a {
+    color:white;
+}
+/* Mettre le lien en blanc */
+
+.texte-section4 p,
+.texte-section4 em {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Mettre plus gros le texte et l'aérer */
+
+.texte-section4 h2 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+}
+
+/* Mettre plus gros le titre et le séparer avec la phrase du dessous */
+
+/* ===>SECTION 5<=== */
+
+.section5 {
+    margin:0 70px 0 70px;
+}
+
+.section5 img {
+    height:600px;
+    width:100%;
+}
+
+.photo-avis {
+    display:grid;
+    height:600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.image-avis {
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.vignette-avis1 {
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:2;
+    border:2px solid #CFC3DD;
+    margin:20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.vignette-avis2 {
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    border:2px solid #CFC3DD;
+    margin:20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.vignette-avis3 {
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+    border:2px solid #CFC3DD;
+    margin:20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.vignette-avis4 {
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+    border:2px solid #CFC3DD;
+    margin:20px;
+    padding: 30px;
+    text-align: center;
 }
