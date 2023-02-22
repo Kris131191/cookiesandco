@@ -1,7 +1,7 @@
 * {
     padding:0;
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 /* enlever tous les paddings et les marges des éléments du code 
 définir la police d'écriture */
@@ -14,9 +14,8 @@ définir la police d'écriture */
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* width: 100%; */
     height: 50px;
-    margin: 10px 65px 10px 0;
+    margin: 10px 65px 3px 0;
 }
 
 /* Dimension et positionnement du texte et de la barre de recherche dans l'entete suppérieure blanche */
@@ -47,7 +46,8 @@ form input {
     border: 2px solid #ee9ca7;
     border-radius: 10px;
     height: 25px;
-    /* width: 100%; */
+    padding:0 0 0 15px;
+    box-shadow: 5px 5px 15px #ee9ca7;
 }
 
 /* Styliser la barre de rechercher */
@@ -60,22 +60,22 @@ form input {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: 250px;
     background: linear-gradient(90deg, #FFAFBD, #ffc3a0);  
 }
 
 /* Taille + couleur de la partie rose de l'entete + position des du logo et du menu */
 
 .entete-rose img {
-    height: 90%;
+    height: 50%;
     width: 25%;
-    margin: 0 0 0 70px;   
+    margin: 0 0 0 90px;   
 } 
 /* dimension et position logo de l'entete */
 
 .entete-rose ul {
     display: flex;
-    margin: 0 70px 0 0;
+    margin: 0 90px 0 0;
     list-style-type: none;
     font-size: 25px;
     color: #343434;
@@ -111,6 +111,7 @@ form input {
     border: 2px solid white;
     border-radius: 30px;
     font-size: 23px;
+    box-shadow: 10px 5px 15px #ee9ca7;
 
 }
 /* Mise en forme du bouton découvrir */
@@ -149,6 +150,7 @@ form input {
     height: 200px;
     background-color: #FFAFBD;
     margin:50px 70px 50px 70px;
+    padding:20px 0;
     color: white;
     text-align: center;
 }
@@ -200,6 +202,7 @@ form input {
     border-radius:10px;
     font-size: 18px;
     color:#CFC3DD;
+    box-shadow: 10px 5px 15px #ee9ca7;
 }
 
 /* Style des boutons de saveurs */
@@ -227,10 +230,15 @@ form input {
 .petite-vignette {
     width: 30%;
     text-align: center;
-    margin:0 10px 10px 10px;
+    margin:20px 10px 20px 10px;
 }
 
 /* Mise en page de chaque petite vignette de cookies en redéfinissant leur taille, aligner le texte et un padding pour les espacer */
+
+.petite-vignette:hover {
+    box-shadow: 10px 10px 15px #ffc3a0;
+}
+
 
 .vignette h4 {
     font-size: 25px;
@@ -240,8 +248,10 @@ form input {
 /* Agrandir le titre + mettre une marge avec le texte */
 
 .petite-vignette p {
-    padding:0 57px;
+    padding:0 57px 15px 57px;
+    text-align: center;
 }
+
 
 /* éviter que le texte dépasse trop sur les côtés */
 
@@ -251,7 +261,8 @@ form input {
     height: 300px;
     width: 100%;
     background-color: #ee9ca7;
-    margin: 50px 0;
+    margin: 60px 0;
+    box-shadow: 5px 10px 15px #ee9ca7;
 }
 
 /* Taille de la section, fond de couleur rose + marge au dessus pour séparer avec la section précédente */
@@ -299,20 +310,29 @@ form input {
 /* ===>SECTION 5<=== */
 
 .section5 {
-    margin:0 70px 0 70px;
+    margin:90px 70px 50px 70px;
 }
+
+/* Marges pour réduire la section sur les deux cotés et la séparer avec la section suivante */
 
 .section5 img {
     height:600px;
     width:100%;
 }
 
+/* Réduire la taille de l'image */
+
+
 .photo-avis {
     display:grid;
+    gap: 35px;
     height:600px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin:50px 0 0 0;
 }
+
+/* Création d'une grid avec 4 colonnes et 2 lignes + dimension de la grid et une marge pour séparer avec le titre */
 
 .image-avis {
     grid-column-start:1;
@@ -321,46 +341,146 @@ form input {
     grid-row-end:3;
 }
 
-.vignette-avis1 {
-    grid-column-start:3;
-    grid-column-end:4;
-    grid-row-start:1;
-    grid-row-end:2;
+/* Position de l'image sur deux colonnes et deux lignes */
+
+
+
+.vignette-avis i
+{
+    margin:27px 0 0 0;
+}
+
+/* Mettre les étoiles en bas de la vignette */
+.vignette-avis{
     border:2px solid #CFC3DD;
-    margin:20px;
-    padding: 30px;
+    padding: 30px 50px;
     text-align: center;
 }
 
-.vignette-avis2 {
-    grid-column-start:4;
-    grid-column-end:5;
-    grid-row-start:1;
-    grid-row-end:2;
-    border:2px solid #CFC3DD;
-    margin:20px;
-    padding: 30px;
+.vignette-avis-shadow{
+    box-shadow: 12px 12px 2px 1px rgb(238,156,167);
+}
+
+
+.section5 h2 {
+    font-size:40px;
+}
+
+/* Augmentation de la taille du titre avis clients */
+
+.photo-avis p {
+    margin:0 0 20px 0;
+    font-size:20px;
+}
+
+/* Augmentation de la taille du texte + marge pour aérer le texte */
+
+.titre-avis{
+    font-weight:bold;
+    color:#CFC3DD;
+}
+
+/* Mise en gras des titres des avis dans les vignettes + coloration en violet */
+
+.photo-avis i {
+    color:#CFC3DD;
+}
+
+/* Etoiles en violet */
+
+
+
+/* ===> SECTION 6 <=== */
+
+.section6 {
+    display:flex;
+    background-color: #CFC3DD;
+    height:250px;
+   
+    margin:80px 70px 100px 70px;
+}
+
+/* Taille de la section 6 + flex pour mettre les deux éléments sur la même ligne + fond de couleur violette + une marge pour réduire la section sur les côté et en dessous */
+
+.texte-nexsletter p {
+    color:white;
+    margin: 10px 0 0 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Texte en blanc + Marge entre les lignes + augmentation de la police et police en gras */
+
+.texte-nexsletter {
+    margin:40px 0 0 90px;
+}
+
+/* Marges sur le dessus et le côté gauche du bloc avec le texte uniquement */
+
+#emailAddress {
+    color:#ee9ca7;
+    font-size:20px;
+    border:none;
+    border-radius:30px;
+    height: 60px;
+    width:50%;
+    margin: auto;
+    padding: 0 0 0 20px;
+    box-shadow: 5px 10px 15px #ee9ca7;
+}
+
+/* Stylisation du champ adresse mail avec texte en rose, augmentation de la police, retrait de la bordure, arrondissement des coins, définir la taille du champ, centrer le champ dans la section + un padding pour décoller le texte de la bordure */
+
+/* ===>FOOTER<=== */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #FFAFBD, #ffc3a0); 
+    color: white;
     text-align: center;
 }
 
-.vignette-avis3 {
-    grid-column-start:3;
-    grid-column-end:4;
-    grid-row-start:2;
-    grid-row-end:3;
-    border:2px solid #CFC3DD;
-    margin:20px;
-    padding: 30px;
-    text-align: center;
+/* Flex pour mettre les éléments en ligne et espacé avec des espaces de chaque côté + un fond rose + écriture blanche + texte centré */
+
+footer ul {
+    list-style-type: none;
+
 }
 
-.vignette-avis4 {
-    grid-column-start:4;
-    grid-column-end:5;
-    grid-row-start:2;
-    grid-row-end:3;
-    border:2px solid #CFC3DD;
-    margin:20px;
-    padding: 30px;
-    text-align: center;
+/* Enlever les points des listes + retrait du padding */
+
+footer li {
+    margin: 0 0 20px 0;
 }
+
+/* Espacer le texte */
+
+footer p {
+    margin:0 0 15px 0;
+}
+
+.titre-footer {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Mettre les titres en gras + augmentation de la police */
+
+.contact {
+    margin:25px 0 10px 50px;
+}
+
+/* Marge en haut, bas et à droite pour centrer les boxs */
+
+.nos-produits {
+    margin:25px 50px 10px 0;
+}
+
+/* Marge haut droite et bas  */
+
+.a-propos {
+    margin:25px 0 0 0;
+}
+
+/* Marge uniquement en haut */
